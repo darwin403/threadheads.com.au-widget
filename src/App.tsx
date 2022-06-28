@@ -48,7 +48,11 @@ function App() {
         </div>
       </section>
       {/* Tie Dye T-Shirts */}
-      <section className={styles.section} style={{ color: "white" }}>
+      <section
+        className={styles.section}
+        style={{ color: "white", backgroundColor: "black" }}
+      >
+        <div className={styles.whitePattern} />
         <div className={styles.column}>
           <div className={styles.year}>
             <img src="/images/star.svg" alt="Star" className={styles.star} />I
@@ -68,6 +72,7 @@ function App() {
       </section>
       {/* Anime T-Shirts */}
       <section className={styles.section} style={{ color: "black" }}>
+        <div className={styles.whiteBackground} />
         <div className={styles.column}>
           <img src="/images/anime.webp" alt="Anime T-Shirts" />
         </div>
@@ -86,7 +91,11 @@ function App() {
         </div>
       </section>
       {/* Graphic T-Shirts */}
-      <section className={styles.section} style={{ color: "white" }}>
+      <section
+        className={styles.section}
+        style={{ color: "white", backgroundColor: "black" }}
+      >
+        <div className={styles.whitePattern} />
         <div className={styles.column}>
           <div className={styles.year}>
             <img src="/images/star.svg" alt="Star" className={styles.star} />I
@@ -106,6 +115,7 @@ function App() {
       </section>
       {/* Crop T-Shirts */}
       <section className={styles.section} style={{ color: "black" }}>
+        <div className={styles.whiteBackground} />
         <div className={styles.column}>
           <img src="/images/crop.webp" alt="Crop T-Shirt" />
         </div>
@@ -124,7 +134,11 @@ function App() {
         </div>
       </section>
       {/* Slogan T-Shirts */}
-      <section className={styles.section} style={{ color: "white" }}>
+      <section
+        className={styles.section}
+        style={{ color: "white", backgroundColor: "black" }}
+      >
+        <div className={styles.whitePattern} />
         <div className={styles.column}>
           <div className={styles.year}>
             <img src="/images/star.svg" alt="Star" className={styles.star} />I
@@ -144,6 +158,7 @@ function App() {
       </section>
       {/* Band T-Shirts */}
       <section className={styles.section} style={{ color: "black" }}>
+        <div className={styles.whiteBackground} />
         <div className={styles.column}>
           <img src="/images/band.webp" alt="Band T-Shirt" />
         </div>

@@ -1,32 +1,60 @@
-import styles from "./App.module.scss";
+import { FC } from "react";
+import styles from "./TShirt.module.scss";
 
-export const TShirt = () => (
+interface IProps {
+  theme: "light" | "dark";
+  year: string;
+  trend: string;
+  type: string;
+  description: string;
+  tShirtImgSrc: string;
+}
+
+export const TShirt: FC<IProps> = ({
+  theme,
+  year,
+  trend,
+  type,
+  description,
+  tShirtImgSrc,
+}) => (
   <section
     className={styles.section}
-    style={{ color: "white", backgroundColor: "black" }}
+    style={
+      theme === "dark"
+        ? { color: "white", backgroundColor: "black", flexDirection: "row" }
+        : {
+            color: "black",
+            backgroundColor: "white",
+            flexDirection: "row-reverse",
+          }
+    }
   >
-    <div className={styles.whitePattern} />
+    <div
+      className={styles.background}
+      style={
+        theme === "dark"
+          ? {
+              backgroundImage: 'url("/images/background-black.png")',
+              opacity: 0.08,
+            }
+          : {
+              backgroundImage: 'url("/images/background-white.png")',
+              opacity: 0.04,
+            }
+      }
+    />
     <div className={styles.column}>
       <div className={styles.year}>
         <img src="/images/star.svg" alt="Star" className={styles.star} />I
-        <span className={styles.heart}>&#10084;&#65039;</span> 80’s
+        <span className={styles.heart}>&#10084;&#65039;</span> {trend}’s
         <img src="/images/star.svg" alt="Star" className={styles.star} />
       </div>
-      <h1 className={styles.header}>Neon T-Shirts</h1>
-      <p className={styles.description}>
-        Ah, the ‘80s. A simpler time when rocking a mullet wasn’t a sign that
-        your cultural outfit of choice is a Bintang singlet, and you could spend
-        all day at the arcade fondling joysticks like an extra from Stranger
-        Things—without the monsters, of course. Speaking of monsters,
-        Ghostbusters came out in 1984 and quickly became one of the go-to movies
-        to watch on VHS at a sleepover with mates…once you’d finished summoning
-        Bloody Mary, of course. As for what you’d be wearing, neon t-shirts were
-        all the rage then and made quite the comeback almost 20 years later in
-        2012.
-      </p>
+      <h1 className={styles.header}>{type}</h1>
+      <p className={styles.description}>{description}</p>
     </div>
     <div className={styles.column}>
-      <img src="/images/neon.svg" alt="Neon T-shirt" />
+      <img src={tShirtImgSrc} alt={type} />
     </div>
   </section>
 );

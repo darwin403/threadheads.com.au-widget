@@ -1,15 +1,29 @@
+@import "./variables.scss";
+
 .section {
-  height: 100vh;
+  // min-height: 100vh;
+  min-height: 50vw;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   align-items: center;
   position: relative;
+
+  @media (min-width: $mdScreen) {
+    flex-direction: row;
+  }
 }
 
 .column {
   display: relative;
   z-index: 1;
+  margin: 3em 1.5em;
+  text-align: center;
+
+  @media (min-width: $mdScreen) {
+    margin: 3rem;
+    text-align: unset;
+  }
 }
 
 .background {
@@ -19,7 +33,11 @@
 }
 
 .year {
-  font-size: 32px;
+  font-size: 24px;
+
+  @media (min-width: $smScreen) {
+    font-size: 32px;
+  }
 }
 
 .heart {
@@ -31,22 +49,47 @@
   display: inline-block;
 
   &:first-child {
-    margin-right: 1em;
+    margin-right: 0.5em;
+    height: 16px;
+
+    @media (min-width: $smScreen) {
+      margin-right: 1em;
+      height: auto;
+    }
   }
+
   &:last-child {
-    margin-left: 1em;
+    margin-left: 0.5em;
+    height: 16px;
+
+    @media (min-width: $smScreen) {
+      margin-right: 1em;
+      height: auto;
+    }
   }
 }
 
 .header {
   font-family: "Poppins";
   font-weight: 700;
-  font-size: 64px;
+  font-size: 32px;
   margin: 0;
+
+  @media (min-width: $smScreen) {
+    font-size: 64px;
+  }
 }
 
 .description {
   max-width: 650px;
   opacity: 0.6;
-  line-height: 36px;
+  line-height: 32px;
+
+  @media (min-width: $smScreen) {
+    line-height: 36px;
+  }
+}
+
+.tShirt {
+  max-width: 100%;
 }

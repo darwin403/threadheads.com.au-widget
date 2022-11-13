@@ -22,11 +22,10 @@ export const TShirt: FC<IProps> = ({
     className={styles.section}
     style={
       theme === "dark"
-        ? { color: "white", backgroundColor: "black", flexDirection: "row" }
+        ? { color: "white", backgroundColor: "black" }
         : {
             color: "black",
             backgroundColor: "white",
-            flexDirection: "row-reverse",
           }
     }
   >
@@ -54,7 +53,7 @@ export const TShirt: FC<IProps> = ({
       <p className={styles.description}>{description}</p>
     </div>
     <div className={styles.column}>
-      <img src={tShirtImgSrc} alt={type} />
+      <img src={tShirtImgSrc} alt={type} className={styles.tShirt} />
     </div>
   </section>
 );

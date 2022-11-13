@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>iFrame Example</title>
 
     <style>
@@ -22,17 +23,26 @@
 
       iframe {
         width: 100%;
-        height: calc(100vh - 85px);
+        border: none;
       }
     </style>
-
-    <script>
-      console.log("innerHeight:", window.innerHeight);
-    </script>
   </head>
   <body>
     <header>Header</header>
-    <iframe src="http://localhost:3000"></iframe>
-    <!-- <footer>Footer</footer> -->
+
+    <iframe src="http://localhost:3000" scrolling="no"></iframe>
+
+    <footer>Footer</footer>
   </body>
+
+  <!-- Initialize iframe resizer -->
+  <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.3.2/iframeResizer.min.js"
+  ></script>
+  <script type="text/javascript">
+    iFrameResize({
+      log: true,
+    });
+  </script>
 </html>

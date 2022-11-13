@@ -1,6 +1,6 @@
-import { Fragment, StrictMode } from "react";
+import { Fragment, StrictMode, useEffect } from "react";
 import ReactDOM from "react-dom/client";
-import { TShirt } from "./components/TShirt";
+import { TShirt, Info } from "./components";
 
 import "./index.css";
 
@@ -136,6 +136,7 @@ function Home() {
       </p>"
         tShirtImgSrc="/images/oversized.png"
       />
+      {/* <Info /> */}
     </Fragment>
   );
 }

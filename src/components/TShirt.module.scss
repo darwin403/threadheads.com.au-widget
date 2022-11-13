@@ -42,12 +42,17 @@
 }
 
 .timeline {
+  display: none;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin: 0 0 0 8em;
   z-index: 1;
   transition: opacity 0.1s;
   opacity: 1;
+
+  @media (min-width: $mdScreen) {
+    display: block;
+  }
 
   .arrow {
     display: block;

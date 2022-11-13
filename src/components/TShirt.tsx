@@ -1,7 +1,25 @@
-import { FC } from "react";
+import { CSSProperties, FC } from "react";
 import styles from "./TShirt.module.scss";
 
 import { Link, Element } from "react-scroll";
+
+type IStickers = {
+  position: "content" | "image" | "background";
+  imageSrc: string;
+  style: CSSProperties;
+}[];
+
+interface IStickersProps {
+  stickers?: IStickers;
+}
+
+const Stickers: FC<IStickersProps> = ({ stickers }) => (
+  <div className={styles.stickers}>
+    {stickers?.map((s, sIndex) => (
+      <img src={s.imageSrc} style={s.style} alt="Sticker" key={sIndex} />
+    ))}
+  </div>
+);
 
 interface IProps {
   theme: "light" | "dark";
@@ -10,6 +28,7 @@ interface IProps {
   type: string;
   description: string;
   tShirtImgSrc: string;
+  stickers?: IStickers;
 }
 
 export const TShirt: FC<IProps> = ({
@@ -19,6 +38,7 @@ export const TShirt: FC<IProps> = ({
   type,
   description,
   tShirtImgSrc,
+  stickers,
 }) => (
   <section
     className={styles.section}
@@ -45,6 +65,8 @@ export const TShirt: FC<IProps> = ({
             }
       }
     />
+
+    <Stickers stickers={stickers?.filter((s) => s.position === "background")} />
 
     <div className={styles.timeline}>
       {year > 2012 && (
@@ -76,6 +98,9 @@ export const TShirt: FC<IProps> = ({
     </div>
     <Element name={year.toString()} className={styles.wrapper}>
       <div className={styles.column}>
+        <Stickers
+          stickers={stickers?.filter((s) => s.position === "content")}
+        />
         <div className={styles.year}>
           <img src="/images/star.svg" alt="Star" className={styles.star} />I
           <span className={styles.heart}>&#10084;&#65039;</span> {trend}’s
@@ -85,6 +110,7 @@ export const TShirt: FC<IProps> = ({
         <p className={styles.description}>{description}</p>
       </div>
       <div className={styles.column}>
+        <Stickers stickers={stickers?.filter((s) => s.position === "image")} />
         <img src={tShirtImgSrc} alt={type} className={styles.tShirt} />
       </div>
     </Element>

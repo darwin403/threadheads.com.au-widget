@@ -1,7 +1,7 @@
 import { Fragment, StrictMode, useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import { Events } from "react-scroll";
-import { TShirt, Info } from "./components";
+import { TShirt, Info, TShirtIntro, InfoIntro } from "./components";
 
 import "./index.css";
 
@@ -23,6 +23,7 @@ function Home() {
 
   return (
     <Fragment>
+      <TShirtIntro />
       <TShirt
         theme="dark"
         year={2012}
@@ -38,6 +39,43 @@ function Home() {
             be wearing, neon t-shirts were all the rage then and made quite the
             comeback almost 20 years later in 2012."
         tShirtImgSrc="/images/neon.svg"
+        // stickers={[
+        //   {
+        //     imageSrc: "/images/stickers/neon/walkman.svg",
+        //     position: "content",
+        //     style: { position: "absolute", left: 20, top: -150 },
+        //   },
+        //   {
+        //     imageSrc: "/images/stickers/neon/cube.svg",
+        //     position: "content",
+        //     style: { position: "absolute", right: 20, bottom: -100 },
+        //   },
+        //   {
+        //     imageSrc: "/images/stickers/neon/80s.svg",
+        //     position: "image",
+        //     style: { position: "absolute", left: -100, top: -100 },
+        //   },
+        //   {
+        //     imageSrc: "/images/stickers/neon/tape.svg",
+        //     position: "image",
+        //     style: { position: "absolute", left: -50, bottom: 50 },
+        //   },
+        //   {
+        //     imageSrc: "/images/stickers/neon/ghostbusters.png",
+        //     position: "image",
+        //     style: { position: "absolute", right: 50, top: -100, zIndex: -1 },
+        //   },
+        //   {
+        //     imageSrc: "/images/stickers/neon/cordless.svg",
+        //     position: "background",
+        //     style: { position: "absolute", left: "50%" },
+        //   },
+        //   {
+        //     imageSrc: "/images/stickers/neon/jukebox.svg",
+        //     position: "background",
+        //     style: { position: "absolute", right: 0 },
+        //   },
+        // ]}
       />
       <TShirt
         theme="light"
@@ -152,6 +190,7 @@ function Home() {
       </p>"
         tShirtImgSrc="/images/oversized.png"
       />
+      <InfoIntro />
       <Info />
     </Fragment>
   );

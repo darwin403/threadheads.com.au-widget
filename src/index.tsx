@@ -1,15 +1,31 @@
 import { Fragment, StrictMode, useEffect } from "react";
 import ReactDOM from "react-dom/client";
+import { Events } from "react-scroll";
 import { TShirt, Info } from "./components";
 
 import "./index.css";
 
 function Home() {
+  useEffect(() => {
+    Events.scrollEvent.register("begin", function () {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register("end", function () {
+      console.log("end", arguments);
+    });
+
+    return () => {
+      Events.scrollEvent.remove("begin");
+      Events.scrollEvent.remove("end");
+    };
+  }, []);
+
   return (
     <Fragment>
       <TShirt
         theme="dark"
-        year="2012"
+        year={2012}
         trend="80"
         type="Neon T-Shirts"
         description="Ah, the ‘80s. A simpler time when rocking a mullet wasn’t a sign
@@ -25,7 +41,7 @@ function Home() {
       />
       <TShirt
         theme="light"
-        year="2013"
+        year={2013}
         trend="90"
         type="Tanks"
         description="Apart from Rugrats and Angela Anaconda, the ‘90s were all about one thing:
@@ -40,7 +56,7 @@ function Home() {
       />
       <TShirt
         theme="dark"
-        year="2014"
+        year={2014}
         trend="60"
         type="Tie Dye T-Shirts"
         description="If you were a kid in the ‘60s, we’re betting your biggest problem was your
@@ -56,7 +72,7 @@ function Home() {
       />
       <TShirt
         theme="light"
-        year="2015"
+        year={2015}
         trend="50"
         type="Anime T-Shirts"
         description="It’s safe to say the ‘50s were a decade of momentous change as NASA formed
@@ -70,7 +86,7 @@ function Home() {
       />
       <TShirt
         theme="dark"
-        year="2016"
+        year={2016}
         trend="50"
         type="Graphic T-Shirts"
         description="From NASA forming to Elvis rising to popularity and Marilyn Monroe
@@ -83,7 +99,7 @@ function Home() {
       />
       <TShirt
         theme="light"
-        year="2017"
+        year={2017}
         trend="80"
         type="Crop T-Shirts"
         description="Aside from Ghostbusters, Michael Jackson, and Family Ties, crop t-shirts
@@ -97,7 +113,7 @@ function Home() {
       />
       <TShirt
         theme="dark"
-        year="2018"
+        year={2018}
         trend="00"
         type="Slogan T-Shirts"
         description="Britney Spears, Paris Hilton, Lindsay Lohan. Aside from being noughties
@@ -111,7 +127,7 @@ function Home() {
       />
       <TShirt
         theme="light"
-        year="2019"
+        year={2019}
         trend="70"
         type="Band T-Shirts"
         description="Back in the ‘70s, all the cool kids couldn’t get enough of Bruce Lee
@@ -124,7 +140,7 @@ function Home() {
       />
       <TShirt
         theme="dark"
-        year="2020"
+        year={2020}
         trend="90"
         type="Oversized T-Shirts"
         description="It was near-impossible to be a teen of the ‘90s and not obsessed with
@@ -136,7 +152,7 @@ function Home() {
       </p>"
         tShirtImgSrc="/images/oversized.png"
       />
-      {/* <Info /> */}
+      <Info />
     </Fragment>
   );
 }

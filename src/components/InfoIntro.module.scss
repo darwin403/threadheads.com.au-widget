@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .section {
   text-align: center;
   min-height: 60vw;
@@ -13,29 +15,28 @@
   width: 100%;
   height: 100%;
   z-index: -1;
-  background: linear-gradient(
-    0deg,
-    #19aabf 0%,
-    #1ba6bf 8%,
-    #2399c1 16%,
-    #2f84c3 25%,
-    #4066c6 34%,
-    #5540ca 43%,
-    #691ece 50%,
-    #0a0c11 88%,
-    #000 100%
-  );
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .wrapper {
-  max-width: 60%;
+  padding: 2em;
   margin: auto;
+  @media (min-width: $mdScreen) {
+    max-width: 70%;
+  }
+  @media (min-width: $lgScreen) {
+    max-width: 60%;
+  }
 }
 
 .header {
-  font-size: 48px;
+  font-size: 24px;
   font-weight: 800;
   margin: 0;
+  @media (min-width: $mdScreen) {
+    font-size: 48px;
+  }
 }
 
 .description {

@@ -39,43 +39,48 @@ function Home() {
             be wearing, neon t-shirts were all the rage then and made quite the
             comeback almost 20 years later in 2012."
         tShirtImgSrc="/images/neon.svg"
-        // stickers={[
-        //   {
-        //     imageSrc: "/images/stickers/neon/walkman.svg",
-        //     position: "content",
-        //     style: { position: "absolute", left: 20, top: -150 },
-        //   },
-        //   {
-        //     imageSrc: "/images/stickers/neon/cube.svg",
-        //     position: "content",
-        //     style: { position: "absolute", right: 20, bottom: -100 },
-        //   },
-        //   {
-        //     imageSrc: "/images/stickers/neon/80s.svg",
-        //     position: "image",
-        //     style: { position: "absolute", left: -100, top: -100 },
-        //   },
-        //   {
-        //     imageSrc: "/images/stickers/neon/tape.svg",
-        //     position: "image",
-        //     style: { position: "absolute", left: -50, bottom: 50 },
-        //   },
-        //   {
-        //     imageSrc: "/images/stickers/neon/ghostbusters.png",
-        //     position: "image",
-        //     style: { position: "absolute", right: 50, top: -100, zIndex: -1 },
-        //   },
-        //   {
-        //     imageSrc: "/images/stickers/neon/cordless.svg",
-        //     position: "background",
-        //     style: { position: "absolute", left: "50%" },
-        //   },
-        //   {
-        //     imageSrc: "/images/stickers/neon/jukebox.svg",
-        //     position: "background",
-        //     style: { position: "absolute", right: 0 },
-        //   },
-        // ]}
+        stickers={[
+          {
+            imageSrc: "/images/stickers/neon/walkman.svg",
+            position: "content",
+            style: { position: "absolute", left: 20, top: -150 },
+          },
+          {
+            imageSrc: "/images/stickers/neon/cube.svg",
+            position: "content",
+            style: { position: "absolute", right: 20, bottom: -100 },
+          },
+          {
+            imageSrc: "/images/stickers/neon/80s.svg",
+            position: "image",
+            style: { position: "absolute", left: -100, top: -100 },
+          },
+          {
+            imageSrc: "/images/stickers/neon/tape.svg",
+            position: "image",
+            style: { position: "absolute", left: -50, bottom: 50 },
+          },
+          {
+            imageSrc: "/images/stickers/neon/ghostbusters.png",
+            position: "image",
+            style: {
+              position: "absolute",
+              right: -50,
+              bottom: "20%",
+              zIndex: -1,
+            },
+          },
+          {
+            imageSrc: "/images/stickers/neon/cordless.svg",
+            position: "background",
+            style: { position: "absolute", left: "50%" },
+          },
+          {
+            imageSrc: "/images/stickers/neon/jukebox.svg",
+            position: "background",
+            style: { position: "absolute", right: 0 },
+          },
+        ]}
       />
       <TShirt
         theme="light"
@@ -91,6 +96,43 @@ function Home() {
         once again one of the most popular items to wear both in and outside the
         house."
         tShirtImgSrc="/images/tanks.svg"
+        stickers={[
+          {
+            imageSrc: "/images/stickers/tanks/tv.svg",
+            position: "content",
+            style: { position: "absolute", left: -150, top: -50 },
+          },
+          {
+            imageSrc: "/images/stickers/tanks/90s.svg",
+            position: "content",
+            style: { position: "absolute", right: -100, top: -50 },
+          },
+          {
+            imageSrc: "/images/stickers/tanks/walkman.svg",
+            position: "content",
+            style: { position: "absolute", bottom: -100, right: -50 },
+          },
+          {
+            imageSrc: "/images/stickers/tanks/joystick.svg",
+            position: "image",
+            style: { position: "absolute", right: -50, top: -50 },
+          },
+          {
+            imageSrc: "/images/stickers/tanks/gameboy.svg",
+            position: "image",
+            style: {
+              position: "absolute",
+              right: -100,
+              bottom: 50,
+              zIndex: -1,
+            },
+          },
+          {
+            imageSrc: "/images/stickers/tanks/sonic.png",
+            position: "image",
+            style: { position: "absolute", left: -50, bottom: -50 },
+          },
+        ]}
       />
       <TShirt
         theme="dark"
@@ -107,6 +149,44 @@ function Home() {
         somewhat illegal), it’s no surprise that tie-dye t-shirts were all the
         rage again by 2014."
         tShirtImgSrc="/images/tie-dye.webp"
+        stickers={[
+          {
+            imageSrc: "/images/stickers/tie-dye/60s.svg",
+            position: "content",
+            style: { position: "absolute", left: 0, top: -120 },
+          },
+          {
+            imageSrc: "/images/stickers/tie-dye/bird.svg",
+            position: "content",
+            style: { position: "absolute", right: 0, top: -100 },
+          },
+          {
+            imageSrc: "/images/stickers/tie-dye/disc.svg",
+            position: "image",
+            style: {
+              position: "absolute",
+              left: -50,
+              top: -50,
+              zIndex: -1,
+              maxWidth: "150px",
+            },
+          },
+          {
+            imageSrc: "/images/stickers/tie-dye/van.svg",
+            position: "image",
+            style: { position: "absolute", right: -150, top: -50, zIndex: -1 },
+          },
+          {
+            imageSrc: "/images/stickers/tie-dye/guitar.svg",
+            position: "image",
+            style: { position: "absolute", left: -25, bottom: 0 },
+          },
+          {
+            imageSrc: "/images/stickers/tie-dye/astroboy.png",
+            position: "image",
+            style: { position: "absolute", right: 25, bottom: -50 },
+          },
+        ]}
       />
       <TShirt
         theme="light"
@@ -120,7 +200,49 @@ function Home() {
         It’s no surprise, though—a juiced-up mouse in spandex and a cape, it was
         so gouda! Come 2015 and anime t-shirts were once again on-trend, thanks to
         modern classics like Attack on Titan and Naruto."
-        tShirtImgSrc="/images/anime.webp"
+        tShirtImgSrc="/images/anime.png"
+        stickers={[
+          {
+            imageSrc: "/images/stickers/anime/popcorn.svg",
+            position: "image",
+            style: { position: "absolute", left: -50, top: -50, zIndex: -1 },
+          },
+          {
+            imageSrc: "/images/stickers/anime/car.svg",
+            position: "image",
+            style: { position: "absolute", right: -100, top: -100 },
+          },
+          {
+            imageSrc: "/images/stickers/anime/nasa.png",
+            position: "image",
+            style: { position: "absolute", bottom: -50, right: -50 },
+          },
+          {
+            imageSrc: "/images/stickers/anime/jukebox.svg",
+            position: "content",
+            style: {
+              position: "absolute",
+              left: 0,
+              top: -150,
+              maxWidth: "100px",
+            },
+          },
+          {
+            imageSrc: "/images/stickers/anime/bowling.svg",
+            position: "content",
+            style: { position: "absolute", right: 50, top: -100 },
+          },
+          {
+            imageSrc: "/images/stickers/anime/50s.svg",
+            position: "content",
+            style: {
+              position: "absolute",
+              left: 0,
+              bottom: -120,
+              maxWidth: "150px",
+            },
+          },
+        ]}
       />
       <TShirt
         theme="dark"
@@ -134,6 +256,38 @@ function Home() {
         t-shirts. Because everything old becomes new again eventually, 2016 saw
         people rocking graphic t-shirts again with a more modern twist."
         tShirtImgSrc="/images/graphic.webp"
+        stickers={[
+          {
+            imageSrc: "/images/stickers/graphic/globe1.svg",
+            position: "content",
+            style: { position: "absolute", left: 0, top: -100 },
+          },
+          {
+            imageSrc: "/images/stickers/graphic/spaceman1.svg",
+            position: "content",
+            style: { position: "absolute", left: 0, bottom: -150 },
+          },
+          {
+            imageSrc: "/images/stickers/graphic/globe2.svg",
+            position: "content",
+            style: { position: "absolute", right: 0, bottom: -50 },
+          },
+          {
+            imageSrc: "/images/stickers/graphic/globe3.svg",
+            position: "image",
+            style: { position: "absolute", left: -100, top: -50, zIndex: -1 },
+          },
+          {
+            imageSrc: "/images/stickers/graphic/spaceman2.svg",
+            position: "image",
+            style: { position: "absolute", left: 0, bottom: 0 },
+          },
+          {
+            imageSrc: "/images/stickers/graphic/ufo.svg",
+            position: "background",
+            style: { position: "absolute", right: 0, bottom: 100 },
+          },
+        ]}
       />
       <TShirt
         theme="light"
@@ -147,7 +301,44 @@ function Home() {
         obviously). And you know, there was something special about freeing the
         belly button—a bit risqué even. 2017 saw the resurgence of the humble crop
         t-shirt, although there was generally far less fluoro involved."
-        tShirtImgSrc="/images/crop.webp"
+        tShirtImgSrc="/images/crop.png"
+        stickers={[
+          {
+            imageSrc: "/images/stickers/crop/camera.svg",
+            position: "image",
+            style: { position: "absolute", left: 0, top: -100 },
+          },
+          {
+            imageSrc: "/images/stickers/crop/skates.svg",
+            position: "image",
+            style: { position: "absolute", left: -50, bottom: -150 },
+          },
+          {
+            imageSrc: "/images/stickers/crop/boombox.svg",
+            position: "background",
+            style: { position: "absolute", left: "40%", top: 50 },
+          },
+          {
+            imageSrc: "/images/stickers/crop/ghostbusters.png",
+            position: "image",
+            style: { position: "absolute", right: 25, bottom: 0 },
+          },
+          {
+            imageSrc: "/images/stickers/crop/pizza.svg",
+            position: "content",
+            style: { position: "absolute", left: -100, top: -100 },
+          },
+          {
+            imageSrc: "/images/stickers/crop/glasses.svg",
+            position: "content",
+            style: { position: "absolute", bottom: -50, right: 50 },
+          },
+          {
+            imageSrc: "/images/stickers/crop/tape.svg",
+            position: "background",
+            style: { position: "absolute", right: 0, top: 150 },
+          },
+        ]}
       />
       <TShirt
         theme="dark"
@@ -162,6 +353,53 @@ function Home() {
         Luckily, when slogan t-shirts came back in 2018, the phrases were
         (usually) much more politically correct."
         tShirtImgSrc="/images/slogan.png"
+        stickers={[
+          {
+            imageSrc: "/images/stickers/slogan/purse.svg",
+            position: "content",
+            style: { position: "absolute", left: 0, top: -150 },
+          },
+          {
+            imageSrc: "/images/stickers/slogan/bow.svg",
+            position: "content",
+            style: { position: "absolute", right: 0, top: -50 },
+          },
+          {
+            imageSrc: "/images/stickers/slogan/shoe.svg",
+            position: "content",
+            style: { position: "absolute", left: 0, bottom: -100 },
+          },
+          {
+            imageSrc: "/images/stickers/slogan/cell.svg",
+            position: "content",
+            style: { position: "absolute", right: 0, bottom: -100 },
+          },
+          {
+            imageSrc: "/images/stickers/slogan/ipod.svg",
+            position: "image",
+            style: { position: "absolute", left: 0, top: -100 },
+          },
+          {
+            imageSrc: "/images/stickers/slogan/bag.svg",
+            position: "image",
+            style: { position: "absolute", right: -50, top: -100 },
+          },
+          {
+            imageSrc: "/images/stickers/slogan/ring.svg",
+            position: "image",
+            style: { position: "absolute", left: 25, bottom: 0 },
+          },
+          {
+            imageSrc: "/images/stickers/slogan/bag.svg",
+            position: "image",
+            style: { position: "absolute", right: -50, top: -100 },
+          },
+          {
+            imageSrc: "/images/stickers/slogan/lipstick.svg",
+            position: "background",
+            style: { position: "absolute", right: 50, bottom: 100 },
+          },
+        ]}
       />
       <TShirt
         theme="light"
@@ -175,6 +413,48 @@ function Home() {
         Queen, AC/DC, and Led Zeppelin were all the rage back then and went on to
         trend again in 2019."
         tShirtImgSrc="/images/band.webp"
+        stickers={[
+          {
+            imageSrc: "/images/stickers/band/planet.svg",
+            position: "image",
+            style: { position: "absolute", left: 0, top: -100 },
+          },
+          {
+            imageSrc: "/images/stickers/band/kiss.svg",
+            position: "image",
+            style: { position: "absolute", right: -75, top: 100, zIndex: -1 },
+          },
+          {
+            imageSrc: "/images/stickers/band/mushroom.svg",
+            position: "image",
+            style: { position: "absolute", left: -100, bottom: 0, zIndex: -1 },
+          },
+          {
+            imageSrc: "/images/stickers/band/moon.svg",
+            position: "image",
+            style: { position: "absolute", right: 0, bottom: 0 },
+          },
+          {
+            imageSrc: "/images/stickers/band/eye.svg",
+            position: "content",
+            style: { position: "absolute", top: -150, left: 0 },
+          },
+          {
+            imageSrc: "/images/stickers/band/bird.svg",
+            position: "content",
+            style: { position: "absolute", top: -150, right: 0 },
+          },
+          {
+            imageSrc: "/images/stickers/band/turtle.svg",
+            position: "content",
+            style: { position: "absolute", bottom: -200, left: -150 },
+          },
+          {
+            imageSrc: "/images/stickers/band/plant.svg",
+            position: "background",
+            style: { position: "absolute", bottom: 0, right: 0 },
+          },
+        ]}
       />
       <TShirt
         theme="dark"
@@ -186,9 +466,50 @@ function Home() {
         Vedder, and Cornell, and grunge was the only music that mattered. But—Of
         course, this meant that your fashion sense was as influenced by the genre
         as your music taste. Baggy jeans and oversized t-shirts were absolutely
-        everywhere in the early ‘90s…and 2020, too!
-      </p>"
+        everywhere in the early ‘90s…and 2020, too!"
         tShirtImgSrc="/images/oversized.png"
+        stickers={[
+          {
+            imageSrc: "/images/stickers/oversized/joystick1.svg",
+            position: "content",
+            style: { position: "absolute", left: 0, top: -150 },
+          },
+          {
+            imageSrc: "/images/stickers/oversized/joystick2.svg",
+            position: "content",
+            style: { position: "absolute", right: 0, top: -50 },
+          },
+          {
+            imageSrc: "/images/stickers/oversized/gameboy1.svg",
+            position: "content",
+            style: { position: "absolute", left: 0, bottom: -150 },
+          },
+          {
+            imageSrc: "/images/stickers/oversized/gameboy2.svg",
+            position: "content",
+            style: { position: "absolute", right: 0, bottom: -50 },
+          },
+          {
+            imageSrc: "/images/stickers/oversized/joystick3.svg",
+            position: "image",
+            style: { position: "absolute", top: -75, left: -50 },
+          },
+          {
+            imageSrc: "/images/stickers/oversized/tape.svg",
+            position: "image",
+            style: { position: "absolute", bottom: 0, left: -50 },
+          },
+          {
+            imageSrc: "/images/stickers/oversized/joystick4.svg",
+            position: "image",
+            style: { position: "absolute", top: 0, right: -50 },
+          },
+          {
+            imageSrc: "/images/stickers/oversized/joystick5.svg",
+            position: "image",
+            style: { position: "absolute", bottom: 50, right: 0, zIndex: -1 },
+          },
+        ]}
       />
       <InfoIntro />
       <Info />

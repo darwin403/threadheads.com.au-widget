@@ -1,20 +1,99 @@
+@import "./variables.scss";
+
 .section {
-  max-height: 100vh;
   color: #f8f9fa;
   background: linear-gradient(180deg, #19aabf 0.01%, #5316b6 100%);
   position: relative;
+  padding: 0 1em;
+
+  @media (min-width: $lgScreen) {
+    padding: 0 3em;
+  }
 }
 
 .row {
   display: flex;
-  .column {
-    display: relative;
-    // flex: 1;
+  flex-direction: column;
+  @media (min-width: $lgScreen) {
+    flex-direction: row;
   }
 }
 
-.model {
-  width: 50%;
-  height: auto;
-  //   position: absolute;
+.column {
+  width: 100%;
+  padding: 0.5em;
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.bubble {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(117px);
+  border-radius: 15px;
+  padding: 15px;
+
+  margin: 0 auto;
+
+  @media (min-width: $lgScreen) {
+    max-width: 500px;
+
+    #slogan {
+      min-height: 250px !important;
+    }
+  }
+
+  > * {
+    margin: 0 1em;
+  }
+
+  .content {
+    .title {
+      margin: 0;
+    }
+  }
+
+  .image {
+    display: none;
+    float: right;
+    max-width: 100%;
+    max-height: 140px;
+    @media (min-width: $lgScreen) {
+      display: block;
+    }
+  }
+}
+
+.slogan {
+  @media (min-width: $lgScreen) {
+    min-height: 225px !important;
+  }
+}
+
+.modalRow {
+  display: none;
+  @media (min-width: $lgScreen) {
+    display: flex;
+  }
+}
+
+.smOnly {
+  display: block;
+  @media (min-width: $lgScreen) {
+    display: none;
+  }
+}
+
+.modalWrapper {
+  position: relative;
+  height: 100%;
+  .model {
+    display: none;
+    position: relative;
+    height: auto;
+    @media (min-width: $lgScreen) {
+      display: block;
+    }
+  }
 }

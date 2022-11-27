@@ -2,7 +2,10 @@ import styles from "./InfoIntro.module.scss";
 
 export const InfoIntro = () => (
   <section className={styles.section}>
-    <div className={styles.background} />
+    <div
+      className={styles.background}
+      style={{ backgroundImage: 'url("/images/background-starry.svg")' }}
+    />
     <div className={styles.wrapper}>
       <h1 className={styles.header}>How does this relate to fashion today?</h1>
       <p className={styles.description}>

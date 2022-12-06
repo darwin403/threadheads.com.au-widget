@@ -93,11 +93,9 @@ export const Info = () => (
                     src="/images/rude-tshirt.svg"
                     alt="Band T-Shirt"
                   />
-                  What’s more, those who fall within the 45+ age group can be
-                  crowned as the kind hearted as they shied away from purchasing
-                  the not so polite items. Perhaps people in this age demo are
-                  concerned about how a sweary slogan tee could corrupt today's
-                  youth.
+                  Those who fall within the 45+ age group can be crowned as the
+                  kind hearted as they shied away from purchasing the not so
+                  polite items.
                 </p>
               </div>
             </Bubble>

@@ -151,7 +151,7 @@ export const Info = () => (
             src="/images/model-female.png"
             alt="Male T-shirt"
             className={styles.model}
-            style={{ width: "50%", marginLeft: "auto" }}
+            style={{ width: "50%", position: "absolute", right: 0, bottom: 0 }}
           />
           <Bubble
             style={{

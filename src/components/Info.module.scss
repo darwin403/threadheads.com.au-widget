@@ -5,6 +5,7 @@
   background: linear-gradient(180deg, #19aabf 0.01%, #5316b6 100%);
   position: relative;
   padding: 0 1em;
+  overflow: hidden;
 
   @media (min-width: $lgScreen) {
     padding: 0 3em;
@@ -91,6 +92,7 @@
   .model {
     display: none;
     position: relative;
+    margin-bottom: -1rem;
     height: auto;
     @media (min-width: $lgScreen) {
       display: block;

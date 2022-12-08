@@ -61,7 +61,7 @@ export const Info = () => (
                     alt="Music T-Shirt"
                   />
                   Meanwhile, music t-shirts are most popular among
-                  25-34-year-olds,
+                  25-34-year-olds.
                 </p>
               </div>
             </Bubble>
@@ -78,7 +78,7 @@ export const Info = () => (
                     src="/images/slogan.png"
                     alt="Band T-Shirt"
                   />
-                  While 35-44-year-olds buy the most slogan t-shirt
+                  While 35-44-year-olds buy the most slogan t-shirt.
                 </p>
               </div>
             </Bubble>
@@ -93,9 +93,8 @@ export const Info = () => (
                     src="/images/rude-tshirt.svg"
                     alt="Band T-Shirt"
                   />
-                  Those who fall within the 45+ age group can be crowned as the
-                  kind hearted as they shied away from purchasing the not so
-                  polite items.
+                  Ages 45+ often shied away from purchasing the not so polite
+                  items.
                 </p>
               </div>
             </Bubble>

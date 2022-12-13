@@ -8,15 +8,28 @@
   justify-content: center;
   color: white;
   position: relative;
+  z-index: -1;
+  min-height: 50vw;
+  background: linear-gradient(
+    0.71deg,
+    #1ba6bf 0.6%,
+    #2399c1 16.41%,
+    #2f84c3 25.3%,
+    #4066c6 34.19%,
+    #5540ca 43.08%,
+    #691ece 49.99%,
+    #000000 95.34%
+  );
 }
 
 .background {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: -1;
   background-repeat: no-repeat;
   background-size: cover;
+  background-blend-mode: screen;
+  mix-blend-mode: screen;
 }
 
 .wrapper {

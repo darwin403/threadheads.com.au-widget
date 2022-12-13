@@ -12,6 +12,14 @@
   }
 }
 
+.graph {
+  display: none;
+
+  @media (min-width: $smScreen) {
+    display: block;
+  }
+}
+
 .row {
   display: flex;
   flex-direction: column;

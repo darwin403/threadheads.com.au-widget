@@ -17,6 +17,7 @@ export const Info = () => (
     <div className={styles.row}>
       <div className={styles.column}>
         <img
+          className={styles.graph}
           src="/images/graph.svg"
           alt="Graph"
           style={{ margin: "0 auto", width: "90%" }}

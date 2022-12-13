@@ -13,8 +13,8 @@ export const InfoIntro = () => (
         say that all of the trends discussed in this timeline influence what we
         wear today. Although, none of us could have predicted that arguably the
         biggest trend of the last couple of years would end up being tracksuits
-        and hoodies for, well…reasons. Now that we’re slowly exiting what we’ll
-        call the ‘dark ages’, we’re looking forward to seeing which
+        and hoodies for, well... reasons. Now that we’re slowly exiting what
+        we’ll call the ‘dark ages’, we’re looking forward to seeing which
         long-forgotten fad is set to become all the rage again.
       </p>
     </div>

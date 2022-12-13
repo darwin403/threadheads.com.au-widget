@@ -103,7 +103,7 @@ export const TShirt: FC<IProps> = ({
         />
         <div className={styles.year}>
           <img src="/images/star.svg" alt="Star" className={styles.star} />I
-          <span className={styles.heart}>&#10084;&#65039;</span> {trend}’s
+          <span className={styles.heart}>&#10084;&#65039;</span> '{trend}s
           <img src="/images/star.svg" alt="Star" className={styles.star} />
         </div>
         <h1 className={styles.header}>{type}</h1>

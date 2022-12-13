@@ -78,7 +78,7 @@ export const Info = () => (
                     src="/images/slogan.png"
                     alt="Band T-Shirt"
                   />
-                  While 35-44-year-olds buy the most slogan t-shirt.
+                  While 35-44-year-olds buy the most slogan t-shirts.
                 </p>
               </div>
             </Bubble>
@@ -136,8 +136,8 @@ export const Info = () => (
               right: -100,
             }}
           >
-            As many self-help books have boldly claimed, ‘men are from mars,
-            women are from venus.’ However, it seems there is one thing they can
+            As many self-help books have boldly claimed, ‘men are from Mars,
+            women are from Venus.’ However, it seems there is one thing they can
             both agree on: their love for a top-notch t-shirt. Yep, tees have
             remained just as popular for men and women over the years, with the
             percentage of males and females buying t-shirts splitting roughly
@@ -171,8 +171,8 @@ export const Info = () => (
     <div className={[styles.row, styles.smOnly].join(" ")}>
       <div className={styles.column}>
         <Bubble>
-          As many self-help books have boldly claimed, ‘men are from mars, women
-          are from venus.’ However, it seems there is one thing they can both
+          As many self-help books have boldly claimed, ‘men are from Mars, women
+          are from Venus.’ However, it seems there is one thing they can both
           agree on: their love for a top-notch t-shirt. Yep, tees have remained
           just as popular for men and women over the years, with the percentage
           of males and females buying t-shirts splitting roughly 50:50.

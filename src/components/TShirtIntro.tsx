@@ -8,7 +8,7 @@ export const TShirtIntro = () => (
         T-Shirt Timeline: Iconic Trends & Their Comebacks
       </h1>
       <p className={styles.description}>
-        Here at Threadheads, we’re not afraid of pulling Marty McFly and going
+        Here at Threadheads, we’re not afraid of pulling a Marty McFly and going
         back in time. So, we’re getting our geek on and analysing trends from
         the last ten years to look back on the iconic t-shirts from eras gone by
         that have since made a comeback. From the cringe-worthy to the at least

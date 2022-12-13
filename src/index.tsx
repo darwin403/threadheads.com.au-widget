@@ -35,7 +35,7 @@ function Home() {
             from Stranger Things—without the monsters, of course. Speaking of
             monsters, Ghostbusters came out in 1984 and quickly became one of
             the go-to movies to watch on VHS at a sleepover with mates…once
-            you’d finished summoning Bloody Mary, of course. As for what you’d
+            you’d finished summoning Bloody Mary. As for what you’d
             be wearing, neon t-shirts were all the rage then and made quite the
             comeback almost 20 years later in 2012."
         tShirtImgSrc="/images/neon.svg"
@@ -348,7 +348,7 @@ function Home() {
         description="Britney Spears, Paris Hilton, Lindsay Lohan. Aside from being noughties
         icons—famous for quotes like ‘That’s hot’ and ‘What’s a soup kitchen?’—one
         thing they all had in common was a penchant for rocking slogan t-shirts.
-        The slogan tee trend of the early 2000s saw celebs and the average joe
+        The slogan tee trend of the early 2000s saw celebs and the average Joe
         alike sporting slogans that would totally get them cancelled in 2022.
         Luckily, when slogan t-shirts came back in 2018, the phrases were
         (usually) much more politically correct."
@@ -463,10 +463,10 @@ function Home() {
         type="Oversized T-Shirts"
         description="It was near-impossible to be a teen of the ‘90s and not obsessed with
         Nirvana, Pearl Jam, and Soundgarden. Everyone was in love with Cobain,
-        Vedder, and Cornell, and grunge was the only music that mattered. But—Of
+        Vedder, and Cornell, and grunge was the only music that mattered. But of
         course, this meant that your fashion sense was as influenced by the genre
         as your music taste. Baggy jeans and oversized t-shirts were absolutely
-        everywhere in the early ‘90s…and 2020, too!"
+        everywhere in the early ‘90s ... and 2020!"
         tShirtImgSrc="/images/oversized.png"
         stickers={[
           {
